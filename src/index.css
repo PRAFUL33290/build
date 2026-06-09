@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', -apple-system, BlinkMacSystemFont, monospace;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.pixel-border {
+  border: 4px solid #2D2B55;
+  box-shadow: 4px 4px 0px #2D2B55;
+}
+
+.pixel-btn {
+  border: 3px solid #2D2B55;
+  box-shadow: 3px 3px 0px #2D2B55;
+  transition: all 0.1s;
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #2D2B55;
+}
